@@ -1,0 +1,24 @@
+{
+    "name": "Agents",
+    "image": "denoland/deno:2.8.2",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "denoland.vscode-deno"
+            ],
+            "settings": {
+                "deno.enable": true,
+                "deno.lint": true,
+                "deno.unstable": false,
+                "editor.formatOnSave": true,
+                "[typescript]": { "editor.defaultFormatter": "denoland.vscode-deno" },
+                "[typescriptreact]": { "editor.defaultFormatter": "denoland.vscode-deno" }
+            }
+        }
+    },
+    "postCreateCommand": "apt-get update && apt-get install -y fd-find ripgrep just && ln -s /usr/bin/fdfind /usr/local/bin/fd 2>/dev/null; just dev",
+    "remoteUser": "deno"
+}

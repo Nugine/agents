@@ -1,0 +1,32 @@
+{
+    "$schema": "https://deno.land/x/deno/cli/schemas/config-file.v1.json",
+    "name": "@nugine/agents",
+    "version": "0.0.0",
+    "exports": "./src/main.tsx",
+    "publish": false,
+    "nodeModulesDir": "auto",
+    "imports": {
+        "@std/assert": "jsr:@std/assert@^1.0.19",
+        "@std/dotenv": "jsr:@std/dotenv@^0.225.7",
+        "@std/uuid": "jsr:@std/uuid@^1.1.1",
+        "@types/react": "npm:@types/react@^19.2.17",
+        "@types/react-dom": "npm:@types/react-dom@^19.2.3",
+        "react": "npm:react@^19.2",
+        "ink": "npm:ink@^7.0"
+    },
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "react"
+    },
+    "fmt": {
+        "lineWidth": 120,
+        "indentWidth": 4,
+        "semiColons": true,
+        "singleQuote": false
+    },
+    "lint": {
+        "rules": {
+            "tags": ["recommended"]
+        }
+    }
+}
