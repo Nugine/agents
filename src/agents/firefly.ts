@@ -24,7 +24,7 @@ Guidelines:
 
 export const fireflyManifest: AgentManifest = {
     kind: "firefly",
-    title: "Firefly",
+    title: "✨ Firefly",
     description: "fork/join 并行编排 · 任务分解 · 结果合成",
     systemPrompt: FIREFLY_PROMPT,
     modelTier: "medium",
